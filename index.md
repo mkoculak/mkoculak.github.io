@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-# Opłaca się mieć otwarty umysł,<br><span style="font-size: 2.75rem;">ale nie na tyle, żeby wypadł mózg.</span>
+# Opłaca się mieć otwarty umysł,<br>ale nie na tyle, żeby wypadł mózg.
 
 <div style="text-align: right; font-size: 1.5rem; color: #8c8c8c;">Carl Sagan</div>
 Nazywam się <strong>Marcin</strong>.  
@@ -12,3 +12,4 @@ Jeśli nie ma mnie przy komputerze, to zapewne śpię.
 
 ### Zawartość strony
 Zamieszczam tutaj materiały, notatki i przemyślenia powiązane przede wszystkim z moją aktywnością naukową - analizą danych EEG, statystyką, neuronauką oraz programowaniem w Pythonie. Czasem pewnie pojawi się słowo lub dwa o nauce jako takiej.
+<span style="font-size: 2.75rem;"></span>
