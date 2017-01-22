@@ -3,7 +3,7 @@
   'use strict';
 
   var canvas,
-    color = '#98B232',
+    color = '#999999',
     context,
     count = 250,
     flakes = [];
