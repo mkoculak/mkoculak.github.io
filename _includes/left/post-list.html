@@ -1,5 +1,14 @@
 {% assign wordCount = 0 %}
 {% for post in site.posts %}
+  {% assign number_post = site.posts | size %}
+  {% if number_post  == 1 %}
+  {% assign number_post = 0 %}
+  {% elsif number_post  < 21 %}
+  {% assign number_post = site.posts | size %}
+  {% elsif number_post  > 20 %}
+  {% assign number_post = site.posts | size | modulo:10 %}
+  {% endif %}
+  {% assign number_tag = site.tags | size | modulo:10 %}
   {% assign wordCount = post.content | number_of_words | plus: {{ wordCount }} %}
 {% endfor %}
 
@@ -7,7 +16,21 @@
 <h1 class="section-title">{{ page.title}}<em>/</em></h1>
 
 <section id="post-list-meta">
-  <p>{{ site.posts | size }} Posts</p>
-  <p>{{ wordCount }} Words</p>
-  <p>{{ site.tags | size }} Tags</p>
+  {% if number_post  == 0 %}
+    <p>{{ site.posts | size }} Post</p>
+  {% elsif number_post == 1 %}
+    <p>{{ site.posts | size }} Postów</p>
+  {% elsif number_post < 5 %}
+    <p>{{ site.posts | size }} Posty</p>
+  {% elsif number_post > 4 %}
+    <p>{{ site.posts | size }} Postów</p>
+  {% endif %}
+
+  <p>{{ wordCount }} Słów</p>
+
+  {% if number_post < 5 %}
+    <p>{{ site.tags | size }} Tagi</p>
+  {% elsif number_post > 4 %}
+    <p>{{ site.tags | size }} Tagów</p>
+  {% endif %}
 </section>
