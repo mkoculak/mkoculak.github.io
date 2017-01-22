@@ -6,10 +6,12 @@
     width: 40%;
 
     .logo {
-      top: 2rem;
-      left: 2rem;
+      top: 5rem;
+      left: 5rem;
       position: absolute;
       opacity: 0.8;
+      width: auto;
+      border: none;
 
       img {
         width: 10rem;
@@ -55,7 +57,7 @@
       }
 
       .date {
-        color: $grey;
+        color: #a5a5a5;
         float: right;
         display: inline-block;
         font-size: 1.5rem;
@@ -94,8 +96,17 @@
     @include left-background($background-post-list);
   }
 
-  #right ul {
+  #right {
+    ul {
     padding: 0;
+    }
+
+    .content {
+      display: block;
+      height: auto;
+      width: 80%;
+      margin-top: 6rem;
+    }
   }
 }
 
