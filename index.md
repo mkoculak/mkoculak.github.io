@@ -1,20 +1,14 @@
 ---
 layout: home
 ---
-# TEST
+# Opłaca się mieć otwarty umysł,<br><span style="font-size: 2.75rem;">ale nie na tyle, żeby wypadł mózg.</span>
 
-I'm Andrew.  
-I'm a [Software Engineer](http://www.sleepeasysoftware.com/coder-vs-programmer-vs-software-engineer-vs-architect-vs/) with a passion for [Software Architecture](https://en.wikipedia.org/wiki/Software_architecture).  
-I work remotely.  
-I care a lot about code design, organization, architecture, and documentation.  
-I ♥ Node.js, Javascript, Great UX, Web Development, the Front End, and tooling with Gulp.
+<div style="text-align: right; font-size: 1.5rem; color: #8c8c8c;">Carl Sagan</div>
+Nazywam się <strong>Marcin</strong>.  
+Jestem doktorantem w Zakładzie Psychofizjologii, [Instytutu Psychologii UJ](http://www.psychologia.uj.edu.pl) oraz członkiem [C-Labu - Laboratorium Badania Świadomości](http://c-lab.pl). Moje zainteresowania naukowe krążą wokół eksperymentalnego badania świadomości za pomocą neuroobrazowania. Najczęściej pracuję z sygnałem EEG, w którym poszukuję korelatów świadomego przetwarzania bodźców.  
+Fascynuje mnie wszystko, co związane z przetwarzaniem sygnałów biologicznych, analizą danych oraz ich wizualizacją. Powoli odkrywam też świat interfejsów mózg-komputer. Chciałbym to kiedyś jeszcze połączyć z zamiłowaniem do robotów i kosmosu. :)
 
-I'm probably on a boat.
+Jeśli nie ma mnie przy komputerze, to zapewne śpię.
 
-### Historical Tidbits
-
-Shellscape.org has a [history](http://web.archive.org/web/19991012050234/http://shellscape.org/)
-rooted in the [Windows Alternative Shell](https://en.wikipedia.org/wiki/List_of_alternative_shells_for_Windows) scene from the late 90s. It was originally conceived as a shell news site. When
-Windows XP was released and addressed many of the alt-shell enthusiasts' concerns,
-the scene all but dried up. The site languished until it was [repurposed](http://web.archive.org/web/20060213075654/http://www.shellscape.org/)
-to house free, and later - open source, software projects.
+### Zawartość strony
+Zamieszczam tutaj materiały, notatki i przemyślenia powiązane przede wszystkim z moją aktywnością naukową - analizą danych EEG, statystyką, neuronauką oraz programowaniem w Pythonie. Czasem pewnie pojawi się słowo lub dwa o nauce jako takiej.
