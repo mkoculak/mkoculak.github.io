@@ -15,8 +15,6 @@
 .about-info {
   margin: 0 auto;
   position: relative;
-  text-align: center;
-  width: 100%;
 
   h1, h2 {
     font-size: 3rem;
@@ -59,6 +57,8 @@
   color: $white;
   max-width: 40rem;
   z-index: 1;
+  width: 100%;
+  text-align: center;
 
   h1 {
     letter-spacing: 0.1rem;
@@ -78,24 +78,28 @@
 }
 
 .about-info {
-  text-align: left;
+  text-align: justify;
+  width: 80%;
 
   h1, h2 {
     color: lighten($black, 27.8431);
-    font-size: 3.5rem;
+    font-size: 3.25rem;
+    padding-bottom: 1rem;
+    text-align: right;
 
     &:after {
-      background: $green;
+      background: linear-gradient(to right, #d3593b 0%, #d5a092 50%, #ffffff 100%);
       left: 0;
       position: absolute;
       top: auto;
-      transform: none;
-      width: 20rem;
+      transform:  none;
+      width: 40rem;
+      margin-bottom: 0.5rem;
     }
   }
 
   p {
-    color: darken($white, 40);
+    color: darken($white, 45);
     font-size: 1.6rem;
     line-height: 2.4rem;
     margin: 1rem 0;
