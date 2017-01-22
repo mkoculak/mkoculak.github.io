@@ -234,7 +234,7 @@ figcaption > code,
 td > code {
   background-color: darken($white, 5%);
   border-radius: 2px;
-  font-family: $base-font;
+  font-family: $code-font;
   font-size: 0.9em;
   padding: 0.1rem 0.2rem;
 }
@@ -255,8 +255,9 @@ canvas {
 }
 
 footer {
-  color: #ccc;
+  color: #a5a5a5;
   font-size: 1.6rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   @include vendor-prefix(user-select, none);
@@ -274,20 +275,20 @@ footer {
   background-size: 100%;
   display: inline-block;
   height: auto;
-  margin: 0 auto;
-  opacity: 0.5;
+  /*margin: 0 auto;*/
+  opacity: 0.8;
   position: relative;
   text-shadow: none;
+  width:40%;
+  border: 0.2rem solid $grey;
+  border-radius: 100%;
 }
 
 #left {
   @include left-background($background-home);
-  background-position: inherit;
+  background-position: center;
   float: left;
-}
 
-#left,
-#right {
   display: table;
   height: 100%;
   // padding: 6rem;
@@ -301,7 +302,18 @@ footer {
 }
 
 #right {
-  display: block;
+  display: table;
+  height: 100%;
+  // padding: 6rem;
+  position: relative;
+  width: 50%;
+
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  /*display: block;*/
   float: right;
   overflow-y: auto;
 }
