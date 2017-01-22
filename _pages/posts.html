@@ -1,7 +1,7 @@
 ---
 layout: post-list
-title: Posts
-description: "List of posts"
+title: Posty
+description: "Lista of postów"
 permalink: /posts
 pageId: post-list
 ---
@@ -19,7 +19,7 @@ pageId: post-list
   {% if post == site.posts.first %}
   <p>
     {{ post.excerpt | strip_html }}
-    <a href="{{ site.baseurl }}{{ post.url }}" title="Read More">&nbsp;→ Read More</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" title="Read More">&nbsp;→ Czytaj dalej</a>
   </p>
   {% endif %}
   <ul class="tags">
