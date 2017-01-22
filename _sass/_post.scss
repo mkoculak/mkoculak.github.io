@@ -50,12 +50,15 @@
     .content {
       display: block;
       height: auto;
+      width: 80%;
+      text-align: justify;
     }
 
     .logo {
       display: block;
       margin-top: 1rem;
-      width: 100%;
+      width: auto;
+      border: none;
 
       img {
         width: 2.5rem;
@@ -63,17 +66,17 @@
 
       &:before,
       &:after {
-        background: linear-gradient(to right, #d0de41 0%, #abd037 50%, #87c040 100%);
+        background: linear-gradient(to right, #939393 0%, #474747 50%, #191919 100%);
         content: '';
         display: block;
         height: 0.2rem;
         position: absolute;
-        top: 0.8rem;
+        top: 1.2rem;
         width: calc(50% - 2rem);
       }
 
       &:after {
-        background: linear-gradient(to right, #3c1a0b 0%, #704b1d 50%, #9e7a2c 100%);
+        background: linear-gradient(to right, #5b2619 0%, #d3593b 50%, #f9714f 100%);
         left: auto;
         right: 0;
       }
@@ -109,8 +112,9 @@ article {
   p {
     font-size: 1.6rem;
     line-height: 1.6;
-    color: #6c6c6c;
-    margin-bottom: 1.3em;
+    color: #868686 !important;
+    margin-bottom: 1em !important;
+    padding-left: 3% !important;
   }
 
   small {
@@ -148,7 +152,7 @@ article {
 
 .post-title-section {
   position: absolute;
-  top: 14rem;
+  top: 16rem;
   left: 5rem;
   right: 5rem;
 
@@ -161,8 +165,8 @@ article {
 
   .tags > li {
     background: none;
-    border: 0.1rem solid rgba($white, 0.4);
-    color: $white;
+    border: 0.1rem solid rgba($grey, 0.4);
+    color: $grey;
     font-size: 1.5rem;
   }
 
@@ -174,7 +178,7 @@ article {
     position: relative;
 
     &:after {
-      background: rgba($white, 0.4);
+      background: rgba($grey, 0.4);
       content: '';
       display: block;
       height: 0.2rem;
@@ -193,7 +197,7 @@ article {
 
     em {
       display: inline-block;
-      margin: 0 1rem;
+      /*margin: 0 1rem;*/
     }
 
     &.reverse {
@@ -201,13 +205,13 @@ article {
       text-align: right;
 
       &:before {
-        background: rgba($white, 0.4);
+        background: rgba($grey, 0.4);
         content: '';
         height: 0.2rem;
         left: 0;
         position: absolute;
         top: 1.5rem;
-        width: calc(100% - 20rem);
+        width: calc(100% - 25rem);
       }
 
       &:after {
@@ -237,7 +241,7 @@ article {
   margin: 0.4em 6rem;
   right: auto;
   text-align: left;
-  width: 15rem;
+  width: 20rem;
 
   a {
     background-color: darken($white, 5%);
