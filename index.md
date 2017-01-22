@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-# Opłaca się mieć otwarty umysł,<br>ale nie na tyle, żeby wypadł mózg.
+# Opłaca się mieć otwarty umysł,<br><p>ale nie na tyle, żeby wypadł mózg.</p>
 
 <div style="text-align: right; font-size: 1.5rem; color: #8c8c8c;">Carl Sagan</div>
 Nazywam się <strong>Marcin</strong>.  
