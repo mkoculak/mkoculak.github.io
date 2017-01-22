@@ -12,6 +12,7 @@ nav {
     position: relative;
     @include vendor-prefix(user-select, none);
     cursor: pointer;
+    opacity: 0.85;
   }
 
   label {
