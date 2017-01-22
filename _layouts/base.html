@@ -24,11 +24,11 @@
       <nav>
         <a href="{{ site.baseurl }}/posts" title="The Blog" id="nav-posts">
           <div></div>
-          <label title="Blog Posts">Posts</span>
+          <label title="Blog Posts">Posty</span>
         </a>
         <a href="{{ site.baseurl }}/projects" title="Software / Projects" id="nav-projects">
           <div></div>
-          <label title="Software / Projects">Projects</span>
+          <label title="Software / Projects">Projekty</span>
         </a>
         <a title="Site Navigation" id="nav-sidebar">
           <label for="sidebar-checkbox"></label>
@@ -37,9 +37,8 @@
 
       <div class="content">
         {{ content }}
+      <footer>&copy; {{ site.time | date: '%Y' }}. Marcin Koculak. Wszystkie prawa zastrzeżone.</footer>
       </div>
-
-      <footer>&copy; {{ site.time | date: '%Y' }}. Andrew Powell. All rights reserved.</footer>
     </section>
 
   </main>
