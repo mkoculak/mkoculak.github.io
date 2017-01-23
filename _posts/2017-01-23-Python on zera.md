@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Python od zera: Instalacja środowiska
+title:  Python od zera - Instalacja środowiska
 date:   2017-01-23
 subject: Krótki poradnik jak zainstalować Pythona wraz z udogodnieniamia dla początkujących programistów.
 image: 
