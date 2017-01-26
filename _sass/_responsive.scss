@@ -42,6 +42,18 @@
       
     }
   }
+  
+  #right {
+
+    .about-info{
+      h1 {
+        font-size: 3.5vw;
+        span {
+          font-size: 3.1vw;
+        }
+      }
+    }
+  }
 
   #projects,
   #page.apps,
@@ -61,6 +73,12 @@
   #right {
     .about-info {
       width: 100%;
+    }
+    h1 {
+      font-size: 4.5vw !important;
+      span {
+        font-size: 4.1vw !important;
+      }
     }
   }
 }
