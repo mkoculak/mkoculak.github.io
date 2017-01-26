@@ -1,21 +1,46 @@
-/* < = mobile */
-@media (max-width: 400px) {}
+@media (max-width: 1400px) {
+  #left{
+    width:45%;
+  }
+  
+  #right {
+    display: block;
+    overflow-y: auto;
+    width: 55%;
+  
+    .about-info{
+      width: 100%;
+      padding-top: 2rem;
+      h1 {
+        font-size: 2.2vw;
+        span {
+          font-size: 1.8vw;
+        }
+      }
+      #sub-title {
+        font-size: 2.25rem;
+      }
+    }
+  }
+}
 
-/* < = phablet */
-@media (max-width: 550px) {}
-
-/* < = tablet */
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   html,
   body {
     overflow: auto;
   }
-
+  
   #left,
   #right {
+    display: table !important;
     float: none;
     overflow-y: inherit;
     width: 100% !important;
+    
+    .about-info {
+      width: 90%;
+      
+    }
   }
 
   #projects,
@@ -31,3 +56,17 @@
     // padding: 6rem 1rem 1rem;
   }
 }
+
+@media (max-width: 650px) {
+  #right {
+    .about-info {
+      width: 100%;
+    }
+  }
+}
+
+/* < = mobile */
+@media (max-width: 400px) {}
+
+/* < = phablet */
+@media (max-width: 550px) {}

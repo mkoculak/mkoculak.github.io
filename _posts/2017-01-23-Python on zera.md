@@ -33,7 +33,7 @@ Anaconda jest dystrybucją Pythona przygotowywaną przez firmę Continuum Analyt
 Plik jest spory, ściągnięcie i zainstalowanie go może trochę potrwać. Dokładne szczegóły instalacji widzicie obok linków do pobierania. Wystarczy za nimi podążać - to zazwyczaj jedna, dwa kroki.
 
 ### Środowisko Anacondy
-<img style="float: right" src="/assets/images/notes/anaconda/anaconda_install.png">
+<img style="float: right; margin-top: 1rem; margin-left: 3rem;" src="/assets/images/notes/anaconda/anaconda_install.png">
 Anaconda to nie tylko dystrybucja języka programowania, ale cały ekosystem powiązanych aplikacji, które starają się ułatwić i zautomatyzować pracę z Pythonem. Tutaj widzicie elementy, które zostały zainstalowane na moim Windowsie. Pokrótce omówimy sobie najważniejsze z nich.  
   
 - Anaconda Navigator - można traktować go jako taki "punkt dowodzenia" dla Anacondy, ponieważ pozwala na uruchomienie innych usług oraz dostęp do funkcjonalności niedostępnych z poziomu menu Windowsa. Z naszej perspektywy najistotniejsze jest to, że w zakładce **Home** mamy dostęp do Jupyter Notebooka oraz do Spydera, o których więcej informacji niżej. Oprócz tego, zakładki Learning i Community pozwalają na dostęp do materiałów tutorialowych oraz przeróżnych stron, istotnych z perspektywy użytkowników (np. stron konferencji branżowych, for dyskusyjnych etc). Warto je przejrzeć poszukując materiałów do nauki albo odpowiedzi na pytania dotyczące Anacondy czy Pythona w ogóle.

@@ -17,7 +17,6 @@
   position: relative;
 
   h1, h2 {
-    font-size: 3rem;
     font-weight: 300;
     position: relative;
 
@@ -61,6 +60,7 @@
   text-align: center;
 
   h1 {
+    font-size: 3rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
@@ -83,7 +83,7 @@
 
   h1, h2 {
     color: lighten($black, 27.8431);
-    font-size: 3.25rem;
+    font-size: 1.9vw;
     padding-bottom: 1rem;
     text-align: right;
 
@@ -93,11 +93,11 @@
       position: absolute;
       top: auto;
       transform:  none;
-      width: 40rem;
+      width: 70%;
       margin-bottom: 0.5rem;
     }
     span {
-      font-size: 2.75rem;
+      font-size: 1.5vw;
     }
   }
 
