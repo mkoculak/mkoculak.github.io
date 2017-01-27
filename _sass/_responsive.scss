@@ -84,7 +84,30 @@
 }
 
 /* < = mobile */
-@media (max-width: 400px) {}
-
-/* < = phablet */
-@media (max-width: 550px) {}
+@media (max-width: 450px) {
+  #left h2 {
+    font-size: 1.8rem;
+  }
+  
+  ul.social-links li {
+    margin-right: 0;
+  }
+  
+  .about-info {
+    p {
+    font-size: 1.3rem;
+    }
+    h3, h4 {
+      font-size: 1.7rem;
+    }
+  }
+  #home #right .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  footer {
+    font-size: 1.3rem;
+  }
+}
