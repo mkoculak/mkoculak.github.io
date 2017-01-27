@@ -12,4 +12,3 @@ Jeśli nie ma mnie przy komputerze, to zapewne śpię.
 
 ### Zawartość strony
 Zamieszczam tutaj materiały, notatki i przemyślenia powiązane przede wszystkim z moją aktywnością naukową - analizą danych EEG, statystyką, neuronauką oraz programowaniem w Pythonie. Czasem pewnie pojawi się słowo lub dwa o nauce jako takiej.
-<span style="font-size: 2.75rem;"></span>
