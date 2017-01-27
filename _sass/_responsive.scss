@@ -22,6 +22,16 @@
       }
     }
   }
+  
+  #projects,
+  #page.apps,
+  #post,
+  #post-list {
+    #right .content {
+      width: 90%;
+      // padding: 6rem 1rem 1rem;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -44,7 +54,11 @@
   }
   
   #right {
-
+    .content{
+      h2 {
+        font-size: 3vw !important;
+      }
+    }
     .about-info{
       h1 {
         font-size: 3.5vw;
@@ -52,15 +66,6 @@
           font-size: 3.1vw;
         }
       }
-    }
-  }
-
-  #projects,
-  #page.apps,
-  #post,
-  #post-list {
-    #right .content {
-      // padding: 6rem 1rem 1rem;
     }
   }
 
@@ -78,6 +83,35 @@
       font-size: 4.5vw !important;
       span {
         font-size: 4.1vw !important;
+      }
+    }
+  }
+  
+  #post, 
+  #post-list {
+    #right .content{
+      .logo {
+        margin-top: 5rem;
+      }
+      width: 100%;
+      padding: 2rem;
+      h2 {
+        font-size: 3vw;
+        line-height: 2.5rem;
+        a {
+          width: 70%;
+          span {
+          font-size: 4vw;
+          }
+        }
+      }
+      
+      article span {
+        font-size: 1.3rem;
+      }
+      
+      #sub-title {
+        font-size: 2.25rem;
       }
     }
   }
@@ -109,5 +143,16 @@
   
   footer {
     font-size: 1.3rem;
+  }
+  
+  #post,
+  #post-list {
+    #right .content{
+      width: 100%;
+      padding: 2rem;
+      h2 {
+        line-height: 1.5rem;
+      }            
+    }
   }
 }
