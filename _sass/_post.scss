@@ -91,13 +91,14 @@ article {
   h1 {
     font-size: 3.5vw;
     line-height: 4vh;
+    margin-top: 6vh;
     margin-bottom: 4vh;
   }
 
   h2 {
     font-size: 1.5vw;
     line-height: 3rem;
-    margin-top: 2rem;
+    margin-top: 4vh;
     margin-bottom: 3rem;
   }
 
@@ -105,7 +106,7 @@ article {
     color: rgba($overlay, 0.7);
 
     strong {
-      font-weight: 700;
+      font-weight: 800;
     }
   }
 
@@ -228,7 +229,7 @@ article {
 
 #share {
   margin: 1rem auto 2rem auto;
-  width: 25rem;
+  width: 30rem;
 
   > .btn {
     font-size: 1.2rem;
