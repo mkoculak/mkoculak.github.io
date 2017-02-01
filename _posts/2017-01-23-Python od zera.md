@@ -38,6 +38,9 @@ Anaconda to nie tylko dystrybucja języka programowania, ale cały ekosystem pow
 
 **Anaconda Navigator** - można traktować go jako taki "punkt dowodzenia" dla Anacondy, ponieważ pozwala na uruchomienie innych usług oraz dostęp do funkcjonalności niedostępnych z poziomu menu Windowsa. Z naszej perspektywy najistotniejsze jest to, że w zakładce **Home** mamy dostęp do Jupyter Notebooka oraz do Spydera, o których więcej informacji niżej. Oprócz tego, zakładki Learning i Community pozwalają na dostęp do materiałów tutorialowych oraz przeróżnych stron, istotnych z perspektywy użytkowników (np. stron konferencji branżowych, for dyskusyjnych etc). Warto je przejrzeć poszukując materiałów do nauki albo odpowiedzi na pytania dotyczące Anacondy czy Pythona w ogóle.
 
+<img style="" src="/assets/images/notes/anaconda/anaconda_navigator.png">
+<br>
+
 **Anaconda Prompt** to w zasadzie typowy wiersz poleceń (inaczej zwany terminalem), który podpięty jest bezpośrednio do naszej dystrybucji Pythona. Dzięki temu możemy bardzo szybko wykonać podstawowe i niezbędne czynności, np. instalację pakietów czy aktualizację tych już obecnych. Do tego wszystkiego służyć będą komendy **condy**, czyli menadżera pakietów Anacondy. Dostępny jest również drugi popularny menadżer **pip**, któy ma dostęp do znaczenie większej ilości pakiektów (conda natomiast jest pod dużo lepszą kontrolą twórców, którzy dbają, by wszystko działało jak należy).
 
 **Jupyter notebook** jest interfejsem graficznym całej dystrybucji. Tworzy lokalny serwer sieciowy, dzięki któremu możliwa jest praca bezpośrednio w przeglądarce internetowej. Jupyter bazuje na IPythonie - interaktywnej wersji silnika Pythona, wzbogacając je o tzw. notatniki - strony internetowe, w których można wykonać kod Pythona, otrzymać tam jego rezultaty (np. wykresy) a potem całość zapisać w dogodnej formie i np. przesłać współpracownikowi, albo wprost zamieścić w internecie w formie statycznej strony HTML.
