@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Python od zera - Instalacja środowiska
-date:   2017-01-23
+date:   2017-02-02
 subject: Krótki poradnik jak zainstalować Pythona wraz z udogodnieniami dla początkujących programistów.
 image:
 image-opacity: 0.8
@@ -55,5 +55,7 @@ Anaconda nie jest jedynym tego typu rozwiązaniem dostępnym na rynku. Dużą po
 Jupyter jest dość mocno inspirowany notatnikiem [Sage](http://www.sagemath.org/), który korzysta również z Pythona (oraz innych darmowych narzędzi) i jest przeznaczony przede wszystkim do wykonywania obliczeń matematycznych. Format notatników staje się jednak coraz bardziej powszechny, więc pojawiają się nowe rozwiązania.  
 [Beaker notebook](http://beakernotebook.com/) to rozwiązanie podobne do Jupytera, ale oferujące notatniki z wieloma językami programowania na raz (np. Pythona, R, Javascript itd.). Korzystając z Jupytera mamy możliwość programowania tylko w jednym języku w obrębie jednego notatnika, jednak jest to projekt bardziej dojrzały i bardziej pewny w użytkowaniu.  
 Ciekawym narzędziem jest też [Binder](http://mybinder.org/), który pozwala pracować z notatnikami na zewnętrznym serwerze. Dzięki temu nie musimy niczego instalować na własnym komputerze. Co więcej, możemy na stronie podać bezpośrednio adres notatnika zamieszczonego w internecie (np. na Githubie) i otworzyć w Binderze jego interaktywną wersję. Całość nie działa równie sprawnie jak wersja lokalna na komputerze, ale jest wygodnym rozwiązaniem kiedy np. pracujemy na cudzym komputerze.
+
+Ostatnim projektem, o którym chciałbym wspomnieć jest projekt [Nteract](https://nteract.io/), którego ambicją jest jeszcze bardziej uprościć pracę z Jupyterem poprzez pozbycie się pośrednictwa przeglądarki internetowej. Nteract to aplikacja desktopowa, która wyświetli nam notatnik i pozwoli na wszystkie operacje, które są możliwe w klasycznym oknie przeglądarki. Całość jest w bardzo wczesnej fazie produkcji, ale zapowiada się bardzo interesująco.
 
 /marcin

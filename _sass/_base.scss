@@ -30,13 +30,14 @@ a {
   color: $green;
   outline: none;
   text-decoration: none;
+  font-family: $header-font;
 }
 
 a:hover,
 a:active,
 a:focus,
 a:visited {
-  color: $green;
+  color: #a72a0b;
 }
 
 caption,
@@ -71,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $base-font;
+  font-family: $header-font;
   font-weight: 300;
   margin: 2rem 0 0.5rem;
 }
@@ -316,4 +317,10 @@ footer {
   /*display: block;*/
   float: right;
   overflow-y: auto;
+}
+
+.tags > li > a{
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 1.2rem !important;
 }
