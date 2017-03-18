@@ -3,11 +3,12 @@ layout: post
 title:  Python od zera - Instalacja środowiska
 date:   2017-02-02
 subject: Krótki poradnik jak zainstalować Pythona wraz z udogodnieniami dla początkujących programistów.
-image:
+image: /assets/images/notes/170202_Python_od_zera/nebula.jpg
 image-opacity: 0.8
 tag:
 - python
 - Anaconda
+- Jupyter
 - Spyder
 ---
 
