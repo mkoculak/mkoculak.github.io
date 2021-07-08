@@ -1,12 +1,12 @@
-{% if page.previous or page.next %}
+{% if page.previous_in_category or page.next_in_category %}
 <nav class="pager">
-  {% if page.previous %}
-  <a href="{{ site.baseurl }}{{ page.previous.url }}" title="{{ page.previous.title | markdownify | strip_html }}">poprzedni</a>
+  {% if page.next_in_category %}
+  <a href="{{ site.baseurl }}{{ page.next_in_category.url }}" title="{{ page.next_in_category.title | markdownify | strip_html }}">poprzedni</a>
   {% else %}
   <a href="#" class="disabled">poprzedni</a>
   {% endif %}
-  {% if page.next %}
-  <a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title | markdownify | strip_html }}">następny</a>
+  {% if page.previous_in_category %}
+  <a href="{{ site.baseurl }}{{ page.previous_in_category.url }}" title="{{ page.previous_in_category.title | markdownify | strip_html }}">następny</a>
   {% else %}
   <a href="#" class="disabled">następny</a>
   {% endif %}

@@ -1,0 +1,14 @@
+{% if page.previous_in_category or page.next_in_category %}
+<nav class="pager">
+  {% if page.next_in_category %}
+  <a href="{{ site.baseurl }}{{ page.next_in_category.url }}" title="{{ page.next_in_category.title | markdownify | strip_html }}">previous</a>
+  {% else %}
+  <a href="#" class="disabled">previous</a>
+  {% endif %}
+  {% if page.previous_in_category %}
+  <a href="{{ site.baseurl }}{{ page.previous_in_category.url }}" title="{{ page.previous_in_category.title | markdownify | strip_html }}">next</a>
+  {% else %}
+  <a href="#" class="disabled">next</a>
+  {% endif %}
+</nav>
+{% endif %}

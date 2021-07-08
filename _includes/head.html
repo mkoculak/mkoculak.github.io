@@ -1,0 +1,34 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ site.baseurl }}/assets/images/favicons/manifest.json">
+
+    <link rel="stylesheet" href="{{ "/assets/css/bootstrap.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/academicons.min.css" | relative_url }}"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+
+    {% if page.image %}
+    {% capture image %}{{ page.image }}{% endcapture %}
+    {% unless image contains 'http://' or image contains 'https://' %}
+      {% capture image %}{{ site.baseurl }}{{ image }}{% endcapture %}
+    {% endunless %}
+    {% assign opacity = '0.5' %}
+    {% if page.image-opacity %}
+      {% assign opacity = page.image-opacity %}
+    {% endif %}
+    <style type="text/css">
+      #left-side {
+        background: linear-gradient(rgba(44, 45, 51, {{ opacity }}), rgba(44, 45, 51, 0.4)), url({{ image }}) no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+      }
+    </style>
+    {% endif %}
+  </head>

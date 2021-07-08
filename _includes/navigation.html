@@ -1,0 +1,10 @@
+<nav class="nav justify-content-end gx-3">
+    <a class="nav-link" href="/posts">BLOG</a>
+    <a class="nav-link" href="/budowa">PUBLIKACJE</a>
+    <a class="nav-link" href="/budowa">PROJEKTY</a>
+    {% if page.linken %}
+    <a class="nav-link" href="{{ page.linken }}"><img src="/assets/images/4gb.svg"></a>
+    {% else %}
+    <a class="nav-link disabled" href="#"><img src="/assets/images/4gb.svg"></a>
+    {% endif %}
+</nav>

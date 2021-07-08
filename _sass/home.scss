@@ -1,0 +1,194 @@
+#home {
+    #left-side {
+        flex: 50%;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(rgba(44, 45, 51, 0.9), rgba(44, 45, 51, 0.7)), url($background-home) no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        h3 {
+            color: white;
+            margin: 0 0 1rem 0;
+            line-height: 5rem;
+
+            &:after {
+                background: #d3593b;
+                display: block;
+                content: "";
+                height: 1px;
+                transform: translateX(50%);
+                width: 50%;
+            }
+        }
+
+        h5 {
+            color: white;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        .logo {
+            width: 10rem;
+            border: 2px solid white;
+            border-radius: 100%;
+            z-index: 1;
+        }
+    
+        canvas {
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    #right-side {
+        flex: 50%;
+        justify-content: space-between;
+
+        .landing {
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+            width: 75%;
+
+            > p {
+                text-align: justify;
+                font-size: 0.9vw;
+            }
+
+            a {
+                text-decoration: none;
+                font-variant: small-caps;
+                font-weight: 600;
+                color: $nav-link-color;
+            }
+
+            figure {
+                margin-bottom: 3rem;
+            }
+
+            h6 {
+                font-size: 1vw;
+            }
+
+            a:hover {
+                color: $nav-link-hover-color;
+            }
+        }
+
+        .blockquote {
+            font-family: $headings-font-family;
+        }
+
+        .first-line {
+            font-size: 2vw;
+        }
+
+        .second-line {
+            font-size: 1.25vw;
+        }
+
+        .blockquote-footer {
+            font-size: 1vw;
+        }
+        h1 {
+            font-variant: small-caps;
+        }
+    }
+}
+
+ul.social-links {
+    margin-top: 1rem;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+  
+    li {
+    //   border: 0.1rem solid $nav-link-color;
+    //   border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      height: 3em;
+      width: 3em;
+      margin-right: 1rem;
+      position: relative;
+      text-align: center;
+      transform: translateZ(0);
+      transition-property: color;
+      transition-duration: 0.3s;
+      vertical-align: middle;
+      box-sizing: content-box;
+  
+      &:before {
+        background-image: linear-gradient(to top, $nav-link-color 50%, transparent 50%);
+        background-size: 200% 200%;
+        border-radius: 50%;
+        content: "";
+        height: 3em;
+        width: 3em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition: background-position 0.2s;
+        z-index: -1;
+        box-sizing: content-box;
+      }
+  
+      &:hover {
+        &:before {
+          background-position: 0 100%;
+          transition: background-position 0.2s;
+        }
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      a {
+        color: $white;
+        display: inline-block;
+
+        i {
+            line-height: 1.5em;
+        }
+      }
+    }
+  }
+
+
+@include media-breakpoint-down(xxl) {
+    #home {
+        #right-side {
+            .landing {
+                > p {
+                    font-size: 1.8vw;
+                }
+
+                figure {
+                    margin: 3rem 0;
+                }
+    
+                h6 {
+                    font-size: 2vw;
+                }
+            }
+    
+            .first-line {
+                font-size: 4vw;
+            }
+    
+            .second-line {
+                font-size: 2.5vw;
+            }
+    
+            .blockquote-footer {
+                font-size: 2vw;
+            }
+        }
+    }
+}

@@ -33,7 +33,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    var left = document.querySelector('#left'),
+    var left = document.querySelector('#left-side'),
       interval;
 
     canvas = document.querySelector('canvas');

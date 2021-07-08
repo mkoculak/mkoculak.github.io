@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "pl-PL" }}">
+  
+  {% include head.html %}
+
+  <body id="home">
+    <section id="left-side">
+      <a href="/en/" class="logo"><img src="{{ site.baseurl }}/assets/images/{{ site.logo }}"></a>
+      
+      <h3>
+        <strong>MIND</strong> THE BRAIN
+      </h3>
+      
+      <h5>
+        {{ site.description-en }}
+      </h5>
+
+      {% include social-links.html %}
+      <canvas></canvas>
+    </section>
+
+    <section id="right-side">
+
+      {% include navigation-en.html %}
+      
+      <div class="landing container">
+        <figure class="text-end">
+          <blockquote class="blockquote">
+            <p>
+              <span class="first-line">It pays to keep an open mind,</span><br>
+              <span class="second-line">but not so open your brains fall out.</span>
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Carl Sagan
+          </figcaption>
+        </figure>
+
+        {{ content }}
+
+      </div>
+      
+      {% include footer-en.html %}
+
+    </section>
+    
+  </body>
+
+  {% include scripts.html %}
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "gb-GB" }}">
+  
+  {% include head.html %}
+
+  <body id="post-list">
+    <section id="left-side">
+      {% assign wordCount = 0 %}
+      {% for post in site.categories.en %}
+        {% assign number_post = site.categories.en | size %}
+        {% if number_post  == 1 %}
+        {% assign number_post = 0 %}
+        {% elsif number_post  < 21 %}
+        {% assign number_post = site.categories.en | size %}
+        {% elsif number_post  > 20 %}
+        {% assign number_post = site.categories.en | size | modulo:10 %}
+        {% endif %}
+        {% assign number_tag = site.tags | size | modulo:10 %}
+        {% assign wordCount = post.content | number_of_words | plus: wordCount %}
+      {% endfor %}
+      
+
+      <a href="/en/" class="logo"><img src="{{ site.baseurl }}/assets/images/{{ site.logo }}"></a>
+      
+      {% if page.placeholder %}
+      {% else %}
+      <section id="post-list-meta">
+        {% if number_post  == 0 %}
+          <p>{{ site.categories.en | size }} Post</p>
+        {% elsif number_post > 0 %}
+          <p>{{ site.categories.en | size }} Posts</p>
+        {% endif %}
+
+        <p>{{ wordCount }} Words</p>
+
+        {% if number_tag < 5 %}
+          <p>{{ site.tags | size }} Tags</p>
+        {% elsif number_tag > 4 %}
+          <p>{{ site.tags | size }} Tags</p>
+        {% endif %}
+        {% endif %}
+
+        <h1 class="section-title">{{ page.title }}/</h1>
+      </section>
+    </section>
+
+    <section id="right-side">
+
+      {% include navigation-en.html %}
+
+      <div class="posts-list container">
+        {{ content }}
+      </div>
+      
+      {% include footer-en.html %}
+
+    </section>    
+  </body>
+
+  {% include scripts.html %}
+
+</html>
