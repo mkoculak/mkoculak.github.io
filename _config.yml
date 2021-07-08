@@ -12,6 +12,8 @@ background:
   home: assets/images/backgrounds/pillars.jpg
   posts: assets/images/backgrounds/neuron2.jpg
 
+sass:
+  sass_dir: _sass
 
 permalink: /:categories/:year/:month/:day/:title
 future: true
